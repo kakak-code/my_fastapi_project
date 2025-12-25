@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.DS_Store
+/dist/
+/build/
+/htmlcov/
+.pytest_cache/
+/.idea/
+/.vscode/
+
