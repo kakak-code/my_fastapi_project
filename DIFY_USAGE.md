@@ -44,7 +44,7 @@ DIFY_TIMEOUT=30
 ### 3. 启动服务
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.main:app --host 0.0.0.0 --reload
 ```
 
 服务启动后，API 文档可在以下地址访问：
