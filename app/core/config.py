@@ -30,6 +30,12 @@ class Settings(BaseSettings):
     mysql_connect_timeout: int = Field(default=10)
     mysql_charset: str = Field(default="utf8mb4")
 
+    # Dify API 配置
+    dify_enabled: bool = Field(default=False)
+    dify_api_key: str = Field(default="", description="Dify API密钥，请妥善保管")
+    dify_base_url: str = Field(default="https://api.dify.ai/v1", description="Dify API基础URL")
+    dify_timeout: int = Field(default=60, description="Dify API请求超时时间（秒），AI处理需要更长时间，建议60秒以上")
+
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:

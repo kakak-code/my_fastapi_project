@@ -14,9 +14,9 @@
    ```bash
    cp env.example .env
    ```
-3. 本地运行：
+3.
    ```bash
-   uvicorn app.main:app --reload
+   uvicorn app.main:app --host 0.0.0.0 --reload
    ```
 
 ## MySQL 查询工具
